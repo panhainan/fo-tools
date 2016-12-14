@@ -1,4 +1,4 @@
-package com.panhainan.database;
+package com.panhainan.db.common;
 
 /**
  * Created by FirePan on 2016/12/14.

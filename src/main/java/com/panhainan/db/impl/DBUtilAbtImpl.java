@@ -1,7 +1,7 @@
-package com.panhainan;
+package com.panhainan.db.impl;
 
-import com.panhainan.database.DBParam;
-import com.panhainan.database.DBTableField;
+import com.panhainan.db.common.DBParam;
+import com.panhainan.db.common.DBTableField;
 
 import java.sql.*;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by FirePan on 2016/12/14.
  */
-public abstract class DBUtil {
+public abstract class DBUtilAbtImpl {
 
     public abstract List<DBTableField> getTableFields(DBParam dbParam,String sql) throws SQLException;
 

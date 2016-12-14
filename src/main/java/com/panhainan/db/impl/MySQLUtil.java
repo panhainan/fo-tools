@@ -1,9 +1,6 @@
-package com.panhainan.database;
-
-import com.panhainan.DBUtil;
+package com.panhainan.db.impl;
 
 import java.sql.*;
-import java.util.ResourceBundle;
 
 /**
  * Created by FirePan on 2016/12/14.

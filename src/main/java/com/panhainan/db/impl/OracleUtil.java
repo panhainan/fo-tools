@@ -1,4 +1,4 @@
-package com.panhainan.database;
+package com.panhainan.db.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
  * Created by FirePan on 2016/12/14.
  */
 public class OracleUtil {
-    static ResourceBundle rbundle = ResourceBundle.getBundle("database");
+    static ResourceBundle rbundle = ResourceBundle.getBundle("db");
     private static String driverName = rbundle.getString("oracle.driverClassName");
     private static String dbUser = rbundle.getString("oracle.username");
     private static String dbPass = rbundle.getString("oracle.password");

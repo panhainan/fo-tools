@@ -1,4 +1,4 @@
-package com.panhainan.database;
+package com.panhainan.db.common;
 
 public class DBTableField {
 

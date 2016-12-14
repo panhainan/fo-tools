@@ -1,6 +1,7 @@
-package com.panhainan.database;
+package com.panhainan.db.impl;
 
-import com.panhainan.DBUtil;
+import com.panhainan.db.common.DBParam;
+import com.panhainan.db.common.DBTableField;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Created by FirePan on 2016/12/14.
  */
-public class AUtil extends DBUtil {
+public class AUtil extends DBUtilAbtImpl {
 
     public List<DBTableField> getTableFields(DBParam dbParam,String sql) {
         Connection conn = super.getConnection(dbParam);
