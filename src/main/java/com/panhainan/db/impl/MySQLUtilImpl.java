@@ -37,7 +37,7 @@ public class MySQLUtilImpl extends DBUtilAbtImpl implements IDBUtil {
     }
 
     @Override
-    public List<DBTableColumn> getTableFields(DBParam dbParam) {
+    public List<DBTableColumn> getTableColumns(DBParam dbParam) {
         Connection conn = super.getConnection(dbParam);
         PreparedStatement pstmt =null;
         ResultSet rs=null;

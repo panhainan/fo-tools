@@ -18,7 +18,7 @@ public class IDBUtilTest {
         System.out.println("************** MySQL testGetTableFields ***************");
         IDBUtil idbUtil = new MySQLUtilImpl();
         DBParam dbParam = new DBParam(null,"com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8","root","123456","test");
-        List<DBTableColumn> list = idbUtil.getTableFields(dbParam);
+        List<DBTableColumn> list = idbUtil.getTableColumns(dbParam);
         System.out.println(list);
         List<String> tablesName = idbUtil.getTablesName(dbParam);
         System.out.println(tablesName);
@@ -28,7 +28,7 @@ public class IDBUtilTest {
         System.out.println("************** Oracle testGetTableFields ***************");
         IDBUtil idbUtil = new OracleUtilImpl();
         DBParam dbParam = new DBParam(null,"oracle.jdbc.OracleDriver","jdbc:oracle:thin:@10.18.96.182:1521:eshopdb","portaldev","portaldev123","ADDRESS");
-        List<DBTableColumn> list = idbUtil.getTableFields(dbParam);
+        List<DBTableColumn> list = idbUtil.getTableColumns(dbParam);
         System.out.println(list);
         List<String> tablesName = idbUtil.getTablesName(dbParam);
         System.out.println(tablesName);

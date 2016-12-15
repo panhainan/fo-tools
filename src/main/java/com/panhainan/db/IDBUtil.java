@@ -13,8 +13,20 @@ import java.util.List;
  */
 public interface IDBUtil {
 
+    /**
+     * 获取当前用户的所有表信息
+     * @param dbParam  数据库连接信息对象
+     * @return List<String>
+     * @throws SQLException
+     */
     List<String> getTablesName(DBParam dbParam) throws SQLException;
 
-    List<DBTableColumn> getTableFields(DBParam dbParam) throws SQLException;
+    /**
+     * 获取表的所有字段信息
+     * @param dbParam 数据库连接信息对象，包含表名
+     * @return List<DBTableColumn>
+     * @throws SQLException
+     */
+    List<DBTableColumn> getTableColumns(DBParam dbParam) throws SQLException;
 
 }
