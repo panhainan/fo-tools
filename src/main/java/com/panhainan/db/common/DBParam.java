@@ -1,7 +1,9 @@
 package com.panhainan.db.common;
 
 /**
- * Created by FirePan on 2016/12/14.
+ * jdbc连接数据库所需信息类
+ * @author 潘海南
+ * @date 2016/12/14
  */
 public class DBParam {
 

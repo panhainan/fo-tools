@@ -14,6 +14,7 @@
         <java.version>1.7</java.version>
         <junit.version>4.11</junit.version>
         <mysql.version>5.1.29</mysql.version>
+        <oracle.version>11.2.0.3</oracle.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -32,7 +33,7 @@
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.3</version>
+            <version>${oracle.version}</version>
         </dependency>
 
 

@@ -1,17 +1,15 @@
 package com.panhainan.db.impl;
 
 import com.panhainan.db.common.DBParam;
-import com.panhainan.db.common.DBTableField;
 
 import java.sql.*;
-import java.util.List;
 
 /**
- * Created by FirePan on 2016/12/14.
+ * jdbc操作数据库工具抽象类
+ * @author 潘海南
+ * @date 2016/12/14
  */
 public abstract class DBUtilAbtImpl {
-
-    public abstract List<DBTableField> getTableFields(DBParam dbParam,String sql) throws SQLException;
 
 
     protected Connection getConnection(DBParam dbParam) {

@@ -1,17 +1,20 @@
 package com.panhainan.db.common;
 
-public class DBTableField {
+/**
+ * 数据库表的字段类
+ * @author 潘海南
+ * @date 2016/12/14
+ */
+public class DBTableColumn {
 
 	private String field;
     private String type;
-	private String desc;
 
     @Override
     public String toString() {
-        return "DBTableField{" +
+        return "DBTableColumn{" +
                 "field='" + field + '\'' +
                 ", type='" + type + '\'' +
-                ", desc='" + desc + '\'' +
                 '}';
     }
 
@@ -21,14 +24,6 @@ public class DBTableField {
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	public String getDesc() {
-		return desc;
-	}
-
-	public void setDesc(String desc) {
-		this.desc = desc;
 	}
 
 	public String getField() {
