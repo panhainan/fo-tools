@@ -1,4 +1,4 @@
-package com.panhainan.db.common;
+package com.panhainan.database.common;
 
 /**
  * 数据库工具类常量

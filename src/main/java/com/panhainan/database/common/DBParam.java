@@ -1,4 +1,4 @@
-package com.panhainan.db.common;
+package com.panhainan.database.common;
 
 /**
  * jdbc连接数据库所需信息类

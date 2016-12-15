@@ -1,8 +1,8 @@
-package com.panhainan.db.impl;
+package com.panhainan.database.impl;
 
-import com.panhainan.db.IDBUtil;
-import com.panhainan.db.common.DBParam;
-import com.panhainan.db.common.DBTableColumn;
+import com.panhainan.database.IDBUtil;
+import com.panhainan.database.common.DBParam;
+import com.panhainan.database.common.DBTableColumn;
 
 import java.sql.*;
 import java.util.ArrayList;

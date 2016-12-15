@@ -1,6 +1,6 @@
-package com.panhainan.db.impl;
+package com.panhainan.database.impl;
 
-import com.panhainan.db.common.DBParam;
+import com.panhainan.database.common.DBParam;
 
 import java.sql.*;
 

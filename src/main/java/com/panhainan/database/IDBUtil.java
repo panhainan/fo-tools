@@ -1,7 +1,7 @@
-package com.panhainan.db;
+package com.panhainan.database;
 
-import com.panhainan.db.common.DBParam;
-import com.panhainan.db.common.DBTableColumn;
+import com.panhainan.database.common.DBParam;
+import com.panhainan.database.common.DBTableColumn;
 
 import java.sql.SQLException;
 import java.util.List;
