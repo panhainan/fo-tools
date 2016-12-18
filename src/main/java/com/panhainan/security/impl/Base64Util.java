@@ -1,8 +1,6 @@
 package com.panhainan.security.impl;
 
-import com.panhainan.security.common.SecurityConstant;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-import org.apache.commons.codec.binary.Hex;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
@@ -13,6 +11,10 @@ import java.nio.charset.StandardCharsets;
 public class Base64Util {
     public static String encode(String data) throws UnsupportedEncodingException {
         String encryptData = Base64.encode(data.getBytes(StandardCharsets.UTF_8));
+        return encryptData;
+    }
+    public static String encode(byte[] data) throws UnsupportedEncodingException {
+        String encryptData = Base64.encode(data);
         return encryptData;
     }
 
