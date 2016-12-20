@@ -1,0 +1,6 @@
+Base64 简单转码
+MessageDigestUtil 消息摘要
+SymmetryUtil 对称加密
+AsymmetricUtil 非对称加密
+
+对应的包为他们相关的实现

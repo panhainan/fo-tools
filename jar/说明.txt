@@ -1,0 +1,3 @@
+将压缩包中的两个jar文件替换%JDK_HOME%\jre\lib\security中的两个jar，同时还要替换%JRE_HOME%\jre\lib\security中的两个jar
+
+否则AES在使用256长度时会抛出异常InvalidKeyException
