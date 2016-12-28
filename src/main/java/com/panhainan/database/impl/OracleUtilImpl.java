@@ -41,13 +41,15 @@ public class OracleUtilImpl extends DBUtilAbtImpl implements IDBUtil {
         ResultSet rs=null;
         List<DBTableColumn> list = new ArrayList<>();
         try {
-            pstmt = conn.prepareStatement("select * from user_tab_columns where Table_Name=?");
+            pstmt = conn.prepareStatement("select t1.COLUMN_NAME,t1.DATA_TYPE,t2.COMMENTS from (select COLUMN_NAME,DATA_TYPE from user_tab_columns where TABLE_NAME=?) t1 LEFT JOIN (select  COLUMN_NAME,COMMENTS  from   user_col_comments where TABLE_NAME=?) t2 on  t1.COLUMN_NAME=t2.COLUMN_NAME");
             pstmt.setString(1,dbParam.getTableName());
+            pstmt.setString(2,dbParam.getTableName());
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 DBTableColumn t = new DBTableColumn();
                 t.setField(rs.getString("COLUMN_NAME"));
                 t.setType(rs.getString("DATA_TYPE"));
+                t.setComments(rs.getString("COMMENTS"));
                 list.add(t);
             }
         } catch (SQLException e) {

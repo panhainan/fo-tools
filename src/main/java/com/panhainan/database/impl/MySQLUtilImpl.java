@@ -49,6 +49,7 @@ public class MySQLUtilImpl extends DBUtilAbtImpl implements IDBUtil {
                 DBTableColumn t = new DBTableColumn();
                 t.setField(rs.getString("field"));
                 t.setType(rs.getString("type"));
+                t.setComments(rs.getString("comment"));
                 list.add(t);
             }
         } catch (SQLException e) {

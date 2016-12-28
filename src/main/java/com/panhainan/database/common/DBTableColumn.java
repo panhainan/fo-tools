@@ -9,12 +9,14 @@ public class DBTableColumn {
 
 	private String field;
     private String type;
+    private String comments;
 
     @Override
     public String toString() {
         return "DBTableColumn{" +
                 "field='" + field + '\'' +
                 ", type='" + type + '\'' +
+                ", comments='" + comments + '\'' +
                 '}';
     }
 
@@ -33,4 +35,12 @@ public class DBTableColumn {
 	public void setField(String field) {
 		this.field = field;
 	}
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
 }
