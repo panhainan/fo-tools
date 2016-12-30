@@ -27,7 +27,8 @@ public class IDBUtilTest {
     public void testOracle() throws  SQLException{
         System.out.println("************** Oracle testGetTableFields ***************");
         IDBUtil idbUtil = new OracleUtilImpl();
-        DBParam dbParam = new DBParam(null,"oracle.jdbc.OracleDriver","jdbc:oracle:thin:@10.18.96.182:1521:eshopdb","portaldev","portaldev123","ADDRESS");
+        DBParam dbParam = new DBParam(null,"oracle.jdbc.OracleDriver","jdbc:oracle:thin:@132.96.27.26:1521:dacsdb","industrytest","123","TB_SM_USER");
+        // new DBParam(null,"oracle.jdbc.OracleDriver","jdbc:oracle:thin:@10.18.96.182:1521:eshopdb","portaldev","portaldev123","ADDRESS");
         List<DBTableColumn> list = idbUtil.getTableColumns(dbParam);
         System.out.println(list);
         List<String> tablesName = idbUtil.getTablesName(dbParam);
